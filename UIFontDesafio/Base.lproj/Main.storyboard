@@ -90,6 +90,9 @@
                                 <state key="normal" title="Helvetica">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnChangeFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vbp-ns-2gM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIp-cW-wMi">
                                 <rect key="frame" x="228" y="66" width="91" height="30"/>
@@ -116,6 +119,9 @@
                                         <include reference="hzn-7i-zcD"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="btnAlterar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vzy-LF-Yh9"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="nome" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jem-Kr-XGc">
                                 <rect key="frame" x="35" y="28" width="275" height="30"/>
@@ -157,6 +163,9 @@
                                         <include reference="z93-rc-Gov"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="btnChangeFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4Y-bP-lqi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FtH-GL-Pf2">
                                 <rect key="frame" x="68" y="404" width="52" height="30"/>
@@ -180,6 +189,9 @@
                                         <include reference="x3l-Mr-FpX"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="btnChangeFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VVQ-yE-33t"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jlb-lB-hOY">
                                 <rect key="frame" x="68" y="463" width="109" height="30"/>
@@ -203,6 +215,9 @@
                                         <include reference="uef-zC-fr7"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="btnChangeFont:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k1H-hy-KwN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -254,6 +269,7 @@
                             <constraint firstItem="jlb-lB-hOY" firstAttribute="top" secondItem="FtH-GL-Pf2" secondAttribute="bottom" constant="25" id="O9J-Hn-iUQ"/>
                             <constraint firstItem="Jem-Kr-XGc" firstAttribute="top" secondItem="gQ8-ta-swg" secondAttribute="bottom" constant="8" id="Or4-eg-Qdy"/>
                             <constraint firstItem="gQ8-ta-swg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="P66-o1-qQS"/>
+                            <constraint firstItem="Pjb-Cu-An2" firstAttribute="top" secondItem="4gp-L1-eKK" secondAttribute="bottom" constant="129" id="QID-Jh-OQz"/>
                             <constraint firstItem="Jem-Kr-XGc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QOs-xs-YBM"/>
                             <constraint firstItem="gQ8-ta-swg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="10" id="RTq-zz-dyP"/>
                             <constraint firstItem="FtH-GL-Pf2" firstAttribute="leading" secondItem="kq4-iX-Ab5" secondAttribute="trailing" constant="8" id="TCu-pm-ss4">
@@ -359,6 +375,7 @@
                                 <exclude reference="5S0-ao-5pQ"/>
                                 <exclude reference="8DQ-Cd-HW2"/>
                                 <exclude reference="8e5-vd-vws"/>
+                                <exclude reference="QID-Jh-OQz"/>
                                 <exclude reference="Tft-UJ-xtn"/>
                                 <exclude reference="ZDa-VO-bXw"/>
                                 <exclude reference="irp-Td-04H"/>
@@ -417,7 +434,8 @@
                                 <include reference="syk-JK-lHZ"/>
                                 <include reference="uhZ-wg-fma"/>
                                 <include reference="8DQ-Cd-HW2"/>
-                                <include reference="8e5-vd-vws"/>
+                                <exclude reference="8e5-vd-vws"/>
+                                <include reference="QID-Jh-OQz"/>
                                 <include reference="irp-Td-04H"/>
                                 <include reference="vhK-hN-rO1"/>
                                 <include reference="wCi-L8-4as"/>
@@ -441,7 +459,7 @@
                                 <exclude reference="2OC-gi-evM"/>
                                 <include reference="nmC-2g-xJF"/>
                                 <include reference="waa-eK-GM6"/>
-                                <include reference="3iB-wg-5sM"/>
+                                <exclude reference="3iB-wg-5sM"/>
                                 <include reference="B6f-cU-JAf"/>
                                 <include reference="CUJ-0r-Uxl"/>
                             </mask>
@@ -478,6 +496,10 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="labelName" destination="rzA-OR-plT" id="BJr-Qc-1GC"/>
+                        <outlet property="txtFieldName" destination="Jem-Kr-XGc" id="39o-Qu-NpH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
